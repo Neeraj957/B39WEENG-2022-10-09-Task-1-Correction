@@ -11,6 +11,11 @@ document.body.appendChild(containerDiv);
     h1Element.innerHTML = 'Calculator';
     visibleContainerDiv.appendChild(h1Element);
 
+    const pElement = document.createElement('p');
+    pElement.id = 'description';
+    pElement.innerHTML = 'Start Calculating';
+    visibleContainerDiv.appendChild(pElement);
+
     const calculatorBody = document.createElement('div');
     calculatorBody.className = 'row border border-dark border-2 p-1 m-5 justify-content-center';
     calculatorBody.style.cssText = 'max-width: 400px; min-height: 500px';
